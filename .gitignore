@@ -1,0 +1,3 @@
+# Local preview artifacts
+.preview/
+__pycache__/

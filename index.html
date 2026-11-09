@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#171918" />
+    <meta name="description" content="Dhruv Aron's personal website: about, research, papers, experience, academic activities, and miscellaneous." />
+    <title>Dhruv Aron</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#top" aria-label="Dhruv Aron, back to top">Dhruv Aron<span aria-hidden="true"></span></a>
+        <nav aria-label="Sections">
+          <a href="#top" aria-current="location">About</a>
+          <a href="#research">Research</a>
+          <a href="#papers">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#academic-activities">Activities</a>
+          <a href="#miscellaneous">Misc</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <div class="intro" id="top">
+        <div class="intro-copy">
+          <h1>About</h1>
+          <p>Undergraduate senior at the University of Wisconsin-Madison majoring in Computer Science (with Honors). I have the great fortune of being advised by both <a href="https://pages.cs.wisc.edu/~yxy/">Dr. Xiangyao Yu</a> and <a href="https://pages.cs.wisc.edu/~remzi/">Dr. Remzi Arpaci-Dusseau</a>.</p>
+          <p>I am broadly interested in operating systems, distributed systems, databases, and AI/ML systems, with my research interests focusing on how to design systems infrastructure to better facilitate big data and AI/ML workloads. I was previously a Software Engineering Intern on the Lakebase team at Databricks, where I was advised by <a href="https://haoyuhuang.github.io/">Dr. Haoyu Huang</a>.</p>
+          <div class="profile-links" aria-label="Profile links">
+            <a href="mailto:daron2@wisc.edu">Email</a>
+            <a href="cv.pdf">CV</a>
+            <a href="https://scholar.google.com/citations?user=koX-NSwAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/dhruv-aron">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/dhruv-aron/">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <img class="headshot" src="headshot.jpeg" alt="Headshot of Dhruv Aron" width="600" height="600" decoding="async" />
+      </div>
+
+      <section id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <article class="entry">
+          <h3>UW-Madison Systems Group</h3>
+          <p class="entry-meta">Advised by Dr. Remzi Arpaci-Dusseau · September 2026 – Present</p>
+          <ul>
+            <li>Investigating how systems design affects local LLM inference and agent performance, context awareness, and persistence.</li>
+            <li>Designing and running experiments to isolate systems-layer performance bottlenecks in local inference engines and open-source agent harnesses.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <h3>UW-Madison Databases Group</h3>
+          <p class="entry-meta">Advised by Dr. Xiangyao Yu · September 2025 – Present</p>
+          <ul>
+            <li>Led a study of the suitability of general-purpose and GPU-native relational databases for genomics and bioinformatics.</li>
+            <li>Designed and ran evaluations comparing DuckDB with BEDtools and SAMtools across runtime, storage usage, and expressiveness.</li>
+            <li>Outlined database extensions and microarchitectures needed to better support these workloads.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <h3>Snyder Lab, Stanford University</h3>
+          <p class="entry-meta">Advised by Dr. Michael P. Snyder · September 2023 – August 2025</p>
+          <ul>
+            <li>Identified gaps in existing continuous glucose monitoring tools.</li>
+            <li>Developed Glucose360, an open-source Python framework that integrates glucose data with lifestyle events and automates analysis for researchers and clinicians, which is used by professionals at Stanford Health.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="papers" aria-labelledby="papers-heading">
+        <h2 id="papers-heading">Publications</h2>
+        <article class="entry">
+          <h3><a href="https://doi.org/10.1177/15209156251374711">Glucose360: An Open-Source Python Platform with Event-Based Integration for Continuous Glucose Monitoring Data Analysis</a></h3>
+          <p>Ben Ehlert<sup>*</sup>, <strong>Dhruv Aron</strong><sup>*</sup>, Dalia Perelman, Yue Wu, Michael P. Snyder</p>
+          <p class="entry-meta">Diabetes Technology &amp; Therapeutics · 2026 · 28(2): 130–141</p>
+          <p class="entry-meta"><sup>*</sup> Denotes equal contribution.</p>
+        </article>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+        <article class="entry">
+          <h3>Databricks</h3>
+          <p class="entry-meta">Software Engineering Intern · Lakebase Compute &amp; Performance Team · Advised by Dr. Haoyu Huang · May 2026 – August 2026</p>
+          <ul>
+            <li>Designed and shipped a dynamically resizable PostgreSQL shared-buffer lookup hash table for Lakebase.</li>
+            <li>Reduced the table's memory footprint by 50% and enabled thread-safe dynamic growth and shrinkage while retaining 99% of concurrent query throughput during resizing.</li>
+            <li>Proposed two open-source C patches based on this work, both of which are currently under consideration for official PostgreSQL 20.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <h3>TenSixty Biosciences</h3>
+          <p class="entry-meta">Software Engineering Intern · September 2023 – August 2024</p>
+          <ul>
+            <li>Built a platform for storing, automating, and visualizing computations on .h5ad biological datasets.</li>
+            <li>Combined a Python/Flask API, PostgreSQL, and AWS with a React and D3.js interface for interactive analysis.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="academic-activities" aria-labelledby="academic-activities-heading">
+        <h2 id="academic-activities-heading">Academic Activities</h2>
+        <div class="entry">
+          <h3>Teaching</h3>
+          <p>Teaching Assistant · CS537 (Undergraduate Operating Systems) <span class="entry-meta">· Fall 2026</span></p>
+        </div>
+        <div class="entry">
+          <h3>Student Organizations</h3>
+          <p>Coordinator · <a href="https://upl.cs.wisc.edu/">Undergraduate Projects Lab (UPL)</a> <span class="entry-meta">· April 2026 – Present</span></p>
+          <p>Organizer · <a href="https://madhacks.io/">MadHacks 2026</a></p>
+          <p>Editor · <a href="https://justjournal.club/">Journal of Undergraduate Science and Technology (JUST)</a> <span class="entry-meta">· September 2025 – Present</span></p>
+        </div>
+      </section>
+
+      <section id="miscellaneous" aria-labelledby="miscellaneous-heading">
+        <h2 id="miscellaneous-heading">Miscellaneous</h2>
+        <p>Outside of research, I enjoy weightlifting and playing soccer and basketball. I also enjoy reading philosophy, mystery, and sci-fi books, as well as watching good movies and television shows.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Updated 11/8/26.</span>
+      <a href="#top">Back to Top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>
